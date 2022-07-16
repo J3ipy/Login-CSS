@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="imagem/png" href="./img/ico-120.png" />
+    <title>Login</title>
+
+    <style>
+        #background {
+            position:fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 45%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, .1);
+            background: linear-gradient(to right,
+                    rgb(76, 217, 105),
+                    rgb(52, 170, 220),
+                    rgb(88, 86, 217),
+                    rgb(255, 45, 83),
+                    rgb(255, 45, 83),
+                    rgb(88, 86, 217),
+                    rgb(52, 170, 220),
+                    rgb(76, 217, 105));
+            background-size: 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 10em;
+            text-align: left;
+            animation: sTransition 10s linear infinite;
+        }
+
+        @keyframes sTransition {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 400%;
+            }
+        }
+    </style>
+
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        .flex__mod {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin-right: .5rem;
+        }
+
+        img {
+            margin-right: -.5rem;
+            height: 4rem;
+            margin-top: 10px;
+            max-width: 100%;
+            border-radius: 9999px;
+            border: solid 2px #fc5374;
+            transition: .3s all ease;
+        }
+
+        img:hover {
+            transform: scale(1.3);
+            z-index: 1;
+        }
+
+        *,
+        ::after,
+        ::before {
+            border-width: 0;
+            border-style: solid;
+            border-color: #dae1e7;
+        }
+    </style>
+
+</head>
+<body>
+    <body style="background-image: url(./img/Back.png)"></body>
+    <h1 id="background">BEM VINDO </h1>
+   <div class="cyber-wrap"> 
+        <div class="cyber-continue">
+            <div class="group">
+                <a href="#" class="foto-logo"></a>
+
+                <div class="profile">
+                    <a href="#" class="foto-profile"></a>
+                </div>
+                <a href="#" class="cyber-login">Continue como J3ipy</a>
+                <a href="cyber-logout">Remover Conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account">Não é J3ipy?</p>
+                <p class="not-account">
+                    <span class="link-blue">Alternar Conta</span>
+                    ou
+                    <span class="link-blue">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="get-the-app">
+                 <h4 class="title"><b>Baixe o app</b></h4>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+
+                <div class="flex">
+                    <div class="flex__mod">
+                        <img src="./icons/a.jpg">
+                        <img src="./icons/b.jpg">
+                        <img src="./icons/c.jpg">
+                        <img src="./icons/d.jpg">
+                        <img src="./icons/e.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </div>
+</body>
+</html>
